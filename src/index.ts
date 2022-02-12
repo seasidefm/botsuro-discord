@@ -20,4 +20,4 @@ client.on('interactionCreate', async (interaction: Interaction) => {
     }
 });
 
-client.login(process.env.DISCORD_BOT_ID);
+client.login(process.env.DISCORD_BOT_ID).then(() => console.log('Logged in'));
